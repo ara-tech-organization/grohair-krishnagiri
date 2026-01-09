@@ -11,27 +11,42 @@ function Hairtransplant() {
         <title>Hair Transplant – GroHair & GloSkin</title>
         <meta
           name="description"
-          content="Experience expert hair transplant and hair regrowth treatments at GroHair & GloSkin in Kanchipuram. Book your consultation today."
+          content="Experience expert hair transplant and hair regrowth treatments at GroHair & GloSkin in Krishnagiri. Book your consultation today."
         />
 
         {/* Open Graph / Facebook */}
-        <meta property="og:title" content="Hair Transplant – GroHair & GloSkin" />
+        <meta
+          property="og:title"
+          content="Hair Transplant – GroHair & GloSkin"
+        />
         <meta
           property="og:description"
-          content="Experience expert hair transplant and hair regrowth treatments at GroHair & GloSkin in Kanchipuram. Book your consultation today."
+          content="Experience expert hair transplant and hair regrowth treatments at GroHair & GloSkin in Krishnagiri. Book your consultation today."
         />
         <meta property="og:image" content="%PUBLIC_URL%/image.jpg" />
-        <meta property="og:url" content="https://adgrohairgloskinkanchipuram.in/hairtransplant" />
+        <meta
+          property="og:url"
+          content="https://adgrohairgloskinKrishnagiri.in/hairtransplant"
+        />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="adgrohairgloskinkanchipuram.in" />
-        <meta property="twitter:url" content="https://adgrohairgloskinkanchipuram.in/hairtransplant" />
-        <meta name="twitter:title" content="Hair Transplant – GroHair & GloSkin" />
+        <meta
+          property="twitter:domain"
+          content="adgrohairgloskinKrishnagiri.in"
+        />
+        <meta
+          property="twitter:url"
+          content="https://adgrohairgloskinKrishnagiri.in/hairtransplant"
+        />
+        <meta
+          name="twitter:title"
+          content="Hair Transplant – GroHair & GloSkin"
+        />
         <meta
           name="twitter:description"
-          content="Experience expert hair transplant and hair regrowth treatments at GroHair & GloSkin in Kanchipuram. Book your consultation today."
+          content="Experience expert hair transplant and hair regrowth treatments at GroHair & GloSkin in Krishnagiri. Book your consultation today."
         />
         <meta name="twitter:image" content="%PUBLIC_URL%/image.jpg" />
       </Helmet>

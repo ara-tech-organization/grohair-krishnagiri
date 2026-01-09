@@ -23,17 +23,16 @@ const WhyTrustSection = () => {
   return (
     <Box
       sx={{
-        width: '100%' ,
+        width: "100%",
         backgroundColor: "#f4f3f2ff",
-        py: { xs: 4, sm: 8, md: -5 ,lg:10},
-        mt:{md:10,lg:5}
+        py: { xs: 4, sm: 8, md: -5, lg: 10 },
+        mt: { md: 10, lg: 5 },
       }}
     >
-      <Grid container spacing={6} alignItems="center" >
+      <Grid container spacing={6} alignItems="center">
         {/* ✅ Left Text Content */}
         <Grid
-          size={{xs:12,lg:6}}
-          
+          size={{ xs: 12, lg: 6 }}
           display="flex"
           justifyContent="center"
           data-aos="fade-up"
@@ -51,7 +50,7 @@ const WhyTrustSection = () => {
                 mb: 2,
               }}
             >
-              Why Kanchipuram Clients Trust Us
+              Why Krishnagiri Clients Trust Us
             </Typography>
 
             <Typography
@@ -62,7 +61,7 @@ const WhyTrustSection = () => {
                 mb: 4,
               }}
             >
-              At GroHair & GloSkin kanchipuram, we combine advanced equipment,
+              At GroHair & GloSkin Krishnagiri, we combine advanced equipment,
               certified specialists, and a client–first mindset. That’s why
               we’re known for our consistent results and top-tier service.
             </Typography>
@@ -86,8 +85,8 @@ const WhyTrustSection = () => {
                     backgroundColor: "#fff",
                     borderRadius: 2,
                     p: 2,
-                    width:"100px" ,
-                    height: "100px" ,
+                    width: "100px",
+                    height: "100px",
                     boxShadow: "0 2px 8px rgba(0,0,0,0.1)",
                     textAlign: "center",
                     display: "flex",
@@ -124,16 +123,13 @@ const WhyTrustSection = () => {
 
         {/* ✅ Right Image */}
         <Grid
-         size={{lg:6,xs:12}}
-
-          
+          size={{ lg: 6, xs: 12 }}
           display="flex"
           justifyContent={{ xs: "center", lg: "flex-end" }}
           data-aos="fade-up"
         >
           <Box
             sx={{
-             
               display: "flex",
               justifyContent: "center",
               alignItems: "center",
@@ -148,7 +144,7 @@ const WhyTrustSection = () => {
                 height: "80%",
                 objectFit: "cover",
                 borderRadius: { xs: "20px", lg: "0 100px 0 100px" },
-                mr:{lg:15},
+                mr: { lg: 15 },
               }}
             />
           </Box>

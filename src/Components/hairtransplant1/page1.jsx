@@ -61,7 +61,7 @@ export default function GrohairLanding() {
           <img src={logo} alt="Grohair & Gloskin Logo" />
           <div className="address-container">
             <i className="fa-solid fa-location-dot"></i>
-            <div className="address">Kanchipuram</div>
+            <div className="address">Krishnagiri</div>
           </div>
         </div>
 
@@ -103,7 +103,7 @@ export default function GrohairLanding() {
           </div>
         </section>
 
-        <a href="tel: +91 097510 56789" className="btn calling">
+        <a href="tel: +91 97877 56789" className="btn calling">
           <i className="fa-solid fa-phone"></i>Call
         </a>
 

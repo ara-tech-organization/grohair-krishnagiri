@@ -68,39 +68,7 @@ const BookAppointment = () => {
     navigate("/thankyou");
   };
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "service_mgzuppo",
-        "template_4049eny",
-        formRef.current,
-        "VDlSCc2kgMbOtg_fj"
-      )
-      .then(
-        () => {
-          setOpen(true);
-
-          // Reset form
-          setFormData({
-            firstName: "",
-            lastName: "",
-            email: "",
-            phone: "",
-            time: new Date().toLocaleString(),
-          });
-          setTimeSlot("");
-          setTreatment("");
-          setDate(dayjs());
-        },
-        (error) => {
-          console.error("FAILED...", error);
-          alert("Failed to book appointment.");
-        }
-      );
-  };
-
+  
   return (
     <Box
       sx={{
@@ -137,7 +105,7 @@ const BookAppointment = () => {
           Book Your Appointment
         </Typography>
 
-        <Box component="form" ref={formRef} onSubmit={handleSubmit}>
+        <Box component="form" ref={formRef}>
           <LocalizationProvider dateAdapter={AdapterDayjs}>
             <Grid container spacing={2}>
 

@@ -20,7 +20,7 @@ const Section = () => {
         flexDirection: { xs: "column", md: "row" },
         alignItems: "center",
         justifyContent: "center",
-        width: {lg:"95%",xs:'90%'},
+        width: { lg: "95%", xs: "90%" },
         Height: "100vh",
         px: { xs: 2, md: 8 },
         py: 6,
@@ -28,7 +28,7 @@ const Section = () => {
         backgroundColor: "#fff",
         position: "relative",
         mb: { md: 10 },
-        ml: { sm: 7, lg: 1,md:3 },
+        ml: { sm: 7, lg: 1, md: 3 },
         mt: 10,
       }}
     >
@@ -61,13 +61,13 @@ const Section = () => {
               sm: "1.8rem",
               md: "2.5rem",
               lg: "2rem",
-              xl:'2rem'
+              xl: "2rem",
             },
             mb: 3,
             lineHeight: 1.4,
           }}
         >
-          Welcome to GroHair & GloSkin <br /> Kanchipuram
+          Welcome to GroHair & GloSkin <br /> Krishnagiri
         </Typography>
 
         <Box>
@@ -88,8 +88,8 @@ const Section = () => {
                 backgroundColor: "#f5f5f5",
                 p: 2,
                 borderRadius: 2,
-                maxWidth: {lg:500,md:600,sm:550},
-                height: {lg:230,md:350,xs:200,sm:100},
+                maxWidth: { lg: 500, md: 600, sm: 550 },
+                height: { lg: 230, md: 350, xs: 200, sm: 100 },
                 flex: 1,
               }}
             >
@@ -100,10 +100,10 @@ const Section = () => {
                   mt: 1,
                 }}
               >
-                GroHair and GloSkin combine their deep expertise in hair and skin
-                wellness with the serene pace of Kanchipuram. Our clinic blends
-                clinical precision with a luxurious experience, delivered by
-                trained professionals in a safe, sterile setting.
+                GroHair and GloSkin combine their deep expertise in hair and
+                skin wellness with the serene pace of Krishnagiri. Our clinic
+                blends clinical precision with a luxurious experience, delivered
+                by trained professionals in a safe, sterile setting.
               </Typography>
             </Box>
 
@@ -115,7 +115,7 @@ const Section = () => {
                 p: 2,
                 borderRadius: 2,
                 maxWidth: 550,
-                 height: {lg:230,md:350,xs:200,sm:100},
+                height: { lg: 230, md: 350, xs: 200, sm: 100 },
                 flex: 1,
               }}
             >
@@ -125,11 +125,11 @@ const Section = () => {
                   fontSize: { xs: "0.95rem", sm: "1.3rem", md: "1.05rem" },
                 }}
               >
-                At our Kanchipuram center, you’ll find the best of science,
+                At our Krishnagiri center, you’ll find the best of science,
                 technology, and personalized care. Whether it’s hair thinning,
-                pigmentation issues, premature aging, or any other concern—you’ll
-                find solutions tailored just for you, backed by trusted
-                professionals.
+                pigmentation issues, premature aging, or any other
+                concern—you’ll find solutions tailored just for you, backed by
+                trusted professionals.
               </Typography>
             </Box>
           </Box>
@@ -145,7 +145,7 @@ const Section = () => {
           display: "flex",
           alignItems: "end",
           justifyContent: "end",
-          mr: {lg:10,xs:2,sm:15,md:2},
+          mr: { lg: 10, xs: 2, sm: 15, md: 2 },
           maxWidth: 500,
           height: { xs: "300px", sm: "400px", md: "600px" },
         }}

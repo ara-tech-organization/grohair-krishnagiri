@@ -13,12 +13,12 @@ const testimonials = [
   },
   {
     name: "-Mohan",
-    text: "Hey ,I had a great experience with the ADVANCED GRO HAIR CLINIC in kanchipuram. The results were amazing . Specially need to mention Manager and Doctor's and also to the technician....😌👍",
+    text: "Hey ,I had a great experience with the ADVANCED GRO HAIR CLINIC in Krishnagiri. The results were amazing . Specially need to mention Manager and Doctor's and also to the technician....😌👍",
     rating: 5,
   },
   {
     name: "-Chitra Salvarasu",
-    text: `I visited advanced gro hair & glo skin Kanchipuram 
+    text: `I visited advanced gro hair & glo skin Krishnagiri 
     I was facing more dandruff so one of my friends referred me to the visited clinic meet with
     Dr.Bharathi they suggested to me oxygen laser therapy I took the session.I got a very good result thank you`,
     rating: 5,

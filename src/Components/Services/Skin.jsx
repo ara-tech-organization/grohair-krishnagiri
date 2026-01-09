@@ -134,7 +134,7 @@ const HairSection = () => {
               fontFamily="Poppins"
             >
               <Typography variant="h6" color="text.secondary" mb={1}>
-                Top Skin Solutions at GroHair Kanchipuram
+                Top Skin Solutions at GroHair Krishnagiri
               </Typography>
 
               <Typography

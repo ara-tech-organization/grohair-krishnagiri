@@ -7,7 +7,7 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import logo from "./Images/logo1.png";
+import logo from "./Images/krishnagiri.jpg";
 
 const Footer = () => {
   useEffect(() => {
@@ -23,7 +23,8 @@ const Footer = () => {
         alignItems="center"
         textAlign={{ xs: "center", sm: "center", md: "left" }}
         px={{ xs: 2, sm: 4, md: 5 }}
-        pb={3}
+        pt={10}
+        pb={10}
         mt={{ xs: 3 }}
       >
         {/* Logo & Tagline */}
@@ -35,16 +36,23 @@ const Footer = () => {
           mt={2}
           alignItems={{ xs: "center", sm: "center", md: "flex-start" }}
         >
-          <Box>
+          <Box textAlign={{ xs: "center", md: "left" }}>
             <Box
               component="img"
               src={logo}
               alt="GroHair Logo"
-              sx={{ width: { xs: 200, sm: 250, md: 280 }, mb: -1, mt: -10 }}
+              sx={{
+                width: { xs: 180, sm: 200, md: 220 },
+                display: "block",
+                mb: 1,
+              }}
             />
-            <Typography fontSize={{ xs: 10, md: 17 }}>
-              Restore your confidence today with our expert hair <br />
-              restoration solutions. Book your consultation now!
+
+            <Typography fontSize={{ xs: 12, md: 16 }} lineHeight={1.4}>
+              Restore your confidence today with our expert hair restoration
+              solutions.
+              <br />
+              Book your consultation now!
             </Typography>
           </Box>
         </Grid>
@@ -57,36 +65,36 @@ const Footer = () => {
           display="flex"
           flexDirection="column"
           alignItems={{ xs: "center", sm: "center", md: "flex-start" }}
+          justifyContent="flex-start"
+          mt={{ lg: -12, sm: 0, md: -22 }}
         >
-          <Typography variant="h6" fontWeight="bold" mb={2}>
+          <Typography variant="h6" fontWeight="bold">
             Contact
           </Typography>
 
           <Typography fontSize={{ xs: 15, md: 17 }} lineHeight={1.6}>
-            1st Floor, KTS Towers, Nellukara St,above Federal Bank, Kanchipuram,
-            Tamil Nadu 631502
+            Door No 5i/3, Somarpet, Salem ByPass Road, near Jayavilas Hotel,
+            Gandhi Nagar, Krishnagiri, Tamil Nadu 635002
           </Typography>
 
           <Box display="flex" alignItems="center" mt={2}>
             <PhoneIcon sx={{ color: "#fff", mr: 1 }} />
-            <Typography fontSize={{ xs: 15, md: 17 }}>
-              +91 097510 56789
-            </Typography>
+            <Typography fontSize={{ xs: 15, md: 17 }}>97877 56789</Typography>
           </Box>
 
           <Box display="flex" alignItems="center" mt={1.5}>
             <EmailIcon sx={{ color: "#fff", mr: 1 }} />
             <Typography fontSize={{ xs: 15, md: 17 }}>
-              Kanchipuram@adgrohair.com
+              Krishnagiri@adgrohair.com
             </Typography>
           </Box>
 
-          <Box display="flex" alignItems="center" mt={1.5}>
+          {/* <Box display="flex" alignItems="center" mt={1.5}>
             <InstagramIcon sx={{ color: "#fff", mr: 1 }} />
             <Typography
               fontSize={{ xs: 15, md: 17 }}
               component="a"
-              href="https://www.instagram.com/adgrohairandgloskinkanchipuram/?hl=en/"
+              href="https://www.instagram.com/adgrohairandgloskinKrishnagiri/?hl=en/"
               target="_blank"
               rel="noopener noreferrer"
               sx={{ textDecoration: "none", color: "inherit" }}
@@ -100,14 +108,14 @@ const Footer = () => {
             <Typography
               fontSize={{ xs: 15, md: 17 }}
               component="a"
-              href="https://www.facebook.com/adgrohairandgloskinkanchipuram/videos/?_rdr"
+              href="https://www.facebook.com/adgrohairandgloskinKrishnagiri/videos/?_rdr"
               target="_blank"
               rel="noopener noreferrer"
               sx={{ textDecoration: "none", color: "inherit" }}
             >
               Facebook
             </Typography>
-          </Box>
+          </Box> */}
         </Grid>
 
         {/* Quick Links */}
@@ -183,13 +191,13 @@ const Footer = () => {
             }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0980272400466!2d79.70000458885497!3d12.836941699999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52c30d834e7333%3A0xf1c8e3638d1aebe9!2sAdvanced%20GroHair%20%26%20GloSkin%20-%20Kanchipuram!5e0!3m2!1sen!2sin!4v1754631939220!5m2!1sen!2sin"
-              allowFullScreen=""
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.575909125458!2d78.20365867506898!3d12.530519087745834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac3525b6acbe23%3A0xbda7fc6a80057595!2sAdvanced%20GroHair%20%26%20GloSkin%20-%20Krishnagiri!5e1!3m2!1sen!2sin!4v1767941690802!5m2!1sen!2sin"
+              width="600"
+              height="450"
+             
+              allowfullscreen=""
               loading="lazy"
-              referrerPolicy="no-referrer-when-downgrade"
-              width="100%"
-              height="100%"
-              title="GroHair Location"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </Box>
         </Grid>

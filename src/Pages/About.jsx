@@ -11,29 +11,43 @@ function About() {
   return (
     <div>
       <Helmet>
-        <title>GroHair & GloSkin – Advanced Hair & Skin Care in Kanchipuram</title>
+        <title>
+          GroHair & GloSkin – Advanced Hair & Skin Care in Krishnagiri
+        </title>
         <meta
           name="description"
           content="Get expert hair regrowth and skin treatments at GroHair & GloSkin. Book your consultation today for healthy, glowing results."
         />
 
         {/* Open Graph / Facebook */}
-        <meta property="og:title" content="GroHair & GloSkin – Advanced Hair & Skin Care in Kanchipuram" />
+        <meta
+          property="og:title"
+          content="GroHair & GloSkin – Advanced Hair & Skin Care in Krishnagiri"
+        />
         <meta
           property="og:description"
           content="Get expert hair regrowth and skin treatments at GroHair & GloSkin. Book your consultation today for healthy, glowing results."
         />
         <meta property="og:image" content="%PUBLIC_URL%/image.jpg" />
-        <meta property="og:url" content="https://adgrohairgloskinkanchipuram.in/" />
+        <meta
+          property="og:url"
+          content="https://adgrohairgloskinKrishnagiri.in/"
+        />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="adgrohairgloskinkanchipuram.in" />
-        <meta property="twitter:url" content="https://adgrohairgloskinkanchipuram.in/" />
+        <meta
+          property="twitter:domain"
+          content="adgrohairgloskinKrishnagiri.in"
+        />
+        <meta
+          property="twitter:url"
+          content="https://adgrohairgloskinKrishnagiri.in/"
+        />
         <meta
           name="twitter:title"
-          content="GroHair & GloSkin – Advanced Hair & Skin Care in Kanchipuram"
+          content="GroHair & GloSkin – Advanced Hair & Skin Care in Krishnagiri"
         />
         <meta
           name="twitter:description"

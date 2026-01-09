@@ -29,7 +29,7 @@ const Touch = () => {
     firstName: "",
     lastName: "",
     email: "",
-    phone: "",  // FIXED
+    phone: "", // FIXED
     time: new Date().toLocaleString(),
   });
 
@@ -39,39 +39,8 @@ const Touch = () => {
     setFormData({ ...formData, [field]: e.target.value });
   };
 
-  // EmailJS Submit
-  const handleSubmit = (e) => {
-    e.preventDefault();
 
-    emailjs
-      .sendForm(
-        "service_mgzuppo",
-        "template_4049eny",
-        formRef.current,
-        "VDlSCc2kgMbOtg_fj"
-      )
-      .then(
-        () => {
-          alert("Appointment submitted successfully!");
-
-          setFormData({
-            firstName: "",
-            lastName: "",
-            email: "",
-            phone: "",
-            time: new Date().toLocaleString(),
-          });
-
-          setTimeSlot("");
-          setTreatment("");
-          setSelectedDate(dayjs());
-        },
-        (error) => {
-          console.error("FAILED...", error);
-          alert("Failed to send. Try again later.");
-        }
-      );
-  };
+  
 
   const fieldStyle = {
     width: "90%",
@@ -110,16 +79,26 @@ const Touch = () => {
       }}
     >
       <Grid container spacing={4} data-aos="fade-up">
-        <Grid size={{ xs: 12, lg: 4 }} width={{ lg: "50%", xs: "100%", md: "80%" }}>
+        <Grid
+          size={{ xs: 12, lg: 4 }}
+          width={{ lg: "50%", xs: "100%", md: "80%" }}
+        >
           <Paper elevation={3} sx={{ p: 4 }}>
             <Typography variant="h4" fontWeight="bold" align="center">
-              Get in <Box component="span" color="#ff0000ff">Touch</Box>
+              Get in{" "}
+              <Box component="span" color="#ff0000ff">
+                Touch
+              </Box>
             </Typography>
 
             {/* FORM START */}
-            <Box component="form" ref={formRef} onSubmit={handleSubmit} noValidate mt={3}>
-              <Box display="flex" flexDirection="column" alignItems="center" gap={2}>
-
+            <Box component="form" ref={formRef} noValidate mt={3}>
+              <Box
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+                gap={2}
+              >
                 <TextField
                   name="firstName"
                   placeholder="Enter your first name"
@@ -153,7 +132,7 @@ const Touch = () => {
 
                 <TextField
                   type="tel"
-                  name="phone"   // FIXED to match EmailJS
+                  name="phone" // FIXED to match EmailJS
                   placeholder="Enter your phone number"
                   required
                   sx={fieldStyle}
@@ -175,8 +154,12 @@ const Touch = () => {
                           ...fieldStyle,
                           "& .MuiOutlinedInput-root": {
                             "& fieldset": { borderColor: "#000000 !important" },
-                            "&:hover fieldset": { borderColor: "#000000 !important" },
-                            "&.Mui-focused fieldset": { borderColor: "#000000 !important" },
+                            "&:hover fieldset": {
+                              borderColor: "#000000 !important",
+                            },
+                            "&.Mui-focused fieldset": {
+                              borderColor: "#000000 !important",
+                            },
                           },
                           "& .MuiInputAdornment-root svg": {
                             color: "#000000 !important",
@@ -205,7 +188,9 @@ const Touch = () => {
                   InputLabelProps={labelProps}
                   SelectProps={{ displayEmpty: true }}
                 >
-                  <MenuItem value="" disabled>Select time slot</MenuItem>
+                  <MenuItem value="" disabled>
+                    Select time slot
+                  </MenuItem>
                   {[
                     "10.00 AM to 11:00 AM",
                     "11.00 AM to 12:00 PM",
@@ -218,7 +203,9 @@ const Touch = () => {
                     "6.00 PM to 7:00 PM",
                     "7.00 PM to 8:00 PM",
                   ].map((slot) => (
-                    <MenuItem key={slot} value={slot}>{slot}</MenuItem>
+                    <MenuItem key={slot} value={slot}>
+                      {slot}
+                    </MenuItem>
                   ))}
                 </TextField>
 
@@ -232,9 +219,13 @@ const Touch = () => {
                   InputLabelProps={labelProps}
                   SelectProps={{ displayEmpty: true }}
                 >
-                  <MenuItem value="" disabled>Select treatment</MenuItem>
+                  <MenuItem value="" disabled>
+                    Select treatment
+                  </MenuItem>
                   {["Facial", "Hair Treatment", "Skin Peel"].map((t) => (
-                    <MenuItem key={t} value={t}>{t}</MenuItem>
+                    <MenuItem key={t} value={t}>
+                      {t}
+                    </MenuItem>
                   ))}
                 </TextField>
 
@@ -259,19 +250,29 @@ const Touch = () => {
             {/* Contact Info */}
             <Grid container spacing={2} mt={4} alignItems="center">
               <Grid size={{ xs: 8, sm: 4 }}>
-                <Box display="flex" alignItems="center" gap={1} ml={{ lg: 4, md: 1, sm: 3, xs: 2 }}>
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  gap={1}
+                  ml={{ lg: 4, md: 1, sm: 3, xs: 2 }}
+                >
                   <PhoneIcon fontSize="small" />
                   <Box>
                     <Typography variant="body2">PHONE</Typography>
                     <Typography fontSize={{ xs: "0.80rem" }} fontWeight="bold">
-                      097510 56789
+                      97877 56789
                     </Typography>
                   </Box>
                 </Box>
               </Grid>
 
               <Grid size={{ xs: 2, sm: 4 }}>
-                <Box display="flex" alignItems="center" gap={{ md: 5, lg: 3, xs: 3, sm: 6 }} ml={{ xs: -1, md: 1, lg: 1 }}>
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  gap={{ md: 5, lg: 3, xs: 3, sm: 6 }}
+                  ml={{ xs: -1, md: 1, lg: 1 }}
+                >
                   <Link href="#" target="_blank" color="inherit">
                     <InstagramIcon fontSize="medium" />
                   </Link>
@@ -282,18 +283,26 @@ const Touch = () => {
               </Grid>
 
               <Grid size={{ xs: 12, sm: 4 }}>
-                <Box display="flex" alignItems="center" gap={1} ml={{ lg: -8, xs: 2, md: -5, sm: -5 }}>
+                <Box
+                  display="flex"
+                  alignItems="center"
+                  gap={1}
+                  ml={{ lg: -8, xs: 2, md: -5, sm: -5 }}
+                >
                   <EmailIcon fontSize="small" />
                   <Box>
                     <Typography variant="body2">EMAIL</Typography>
-                    <Typography fontSize={{ xs: "0.70rem" }} fontWeight="bold" color="#000">
-                      Kanchipuram@adgrohair.com
+                    <Typography
+                      fontSize={{ xs: "0.70rem" }}
+                      fontWeight="bold"
+                      color="#000"
+                    >
+                      Krishnagiri@adgrohair.com
                     </Typography>
                   </Box>
                 </Box>
               </Grid>
             </Grid>
-
           </Paper>
         </Grid>
 
@@ -311,11 +320,13 @@ const Touch = () => {
             }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.0980272400466!2d79.70000458885497!3d12.836941699999992!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a52c30d834e7333%3A0xf1c8e3638d1aebe9!2sAdvanced%20GroHair%20%26%20GloSkin%20-%20Kanchipuram!5e0!3m2!1sen!2sin!4v1754631939220!5m2!1sen!2sin"
-              allowFullScreen=""
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.575909125458!2d78.20365867506898!3d12.530519087745834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac3525b6acbe23%3A0xbda7fc6a80057595!2sAdvanced%20GroHair%20%26%20GloSkin%20-%20Krishnagiri!5e1!3m2!1sen!2sin!4v1767941690802!5m2!1sen!2sin"
+              width="600"
+              height="450"
+              
+              allowfullscreen=""
               loading="lazy"
-              width="100%"
-              height="100%"
+              referrerpolicy="no-referrer-when-downgrade"
             ></iframe>
           </Box>
         </Grid>

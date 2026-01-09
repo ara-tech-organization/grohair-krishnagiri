@@ -63,7 +63,7 @@ const Section = () => {
             lineHeight: 1.4,
           }}
         >
-          Welcome to GroHair & GloSkin <br /> Kanchipuram
+          Welcome to GroHair & GloSkin <br /> Krishnagiri
         </Typography>
 
         <Typography
@@ -71,14 +71,14 @@ const Section = () => {
             color: "#555",
             fontSize: { xs: "1rem", sm: "1.3rem", md: "1.05rem" },
             mb: 2,
-            maxWidth: {xs:"300px",lg:'500px',sm:'500px'},
-            
-            mx: { xs: 'auto', md: 0 },
+            maxWidth: { xs: "300px", lg: "500px", sm: "500px" },
+
+            mx: { xs: "auto", md: 0 },
           }}
         >
           GroHair and GloSkin combine their deep expertise in hair and skin
-          wellness with the serene pace of Kanchipuram. Our clinic blends clinical
-          precision with a luxurious experience, delivered by trained
+          wellness with the serene pace of Krishnagiri. Our clinic blends
+          clinical precision with a luxurious experience, delivered by trained
           professionals in a safe, sterile setting.
         </Typography>
 
@@ -86,14 +86,14 @@ const Section = () => {
           sx={{
             color: "#555",
             fontSize: { xs: "0.95rem", sm: "1.3rem", md: "1.05rem" },
-            maxWidth: {xs:"300px",lg:'500px',sm:'500px'},
+            maxWidth: { xs: "300px", lg: "500px", sm: "500px" },
             mx: { xs: "auto", md: 0 },
           }}
         >
-          At our Kanchipuram center, you’ll find the best of science, technology,
-          and personalized care. Whether it’s hair thinning, pigmentation
-          issues, premature aging, or any other concern—you’ll find solutions
-          tailored just for you, backed by trusted professionals.
+          At our Krishnagiri center, you’ll find the best of science,
+          technology, and personalized care. Whether it’s hair thinning,
+          pigmentation issues, premature aging, or any other concern—you’ll find
+          solutions tailored just for you, backed by trusted professionals.
         </Typography>
       </Box>
 
@@ -106,10 +106,9 @@ const Section = () => {
           display: "flex",
           alignItems: "end",
           justifyContent: "end",
-          mr: { lg: 17, xs: 4, md: 4,sm:10 },
+          mr: { lg: 17, xs: 4, md: 4, sm: 10 },
           maxWidth: 500,
-          py:3
-         
+          py: 3,
         }}
       >
         {/* Semicircle background */}
@@ -119,7 +118,7 @@ const Section = () => {
             top: 25,
             right: 0,
             width: "90%",
-            height:{lg: "90%",sm:'90%',xs:'90%'},
+            height: { lg: "90%", sm: "90%", xs: "90%" },
             borderRadius: "100% 0 0 0",
             backgroundColor: "#f8d7da",
             zIndex: 0,
@@ -133,7 +132,7 @@ const Section = () => {
           alt="About Girl"
           sx={{
             width: "80%",
-            height: {lg:'100%',sm:'125%',sx:'100%'},
+            height: { lg: "100%", sm: "125%", sx: "100%" },
 
             objectFit: "cover",
             clipPath: "ellipse(100% 100% at 100% 0%)",

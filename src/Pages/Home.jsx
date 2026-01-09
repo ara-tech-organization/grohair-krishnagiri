@@ -16,33 +16,45 @@ function Home() {
   return (
     <Box>
       <Helmet>
-        <title>GroHair & GloSkin – Best Hair & Skin Care in Kanchipuram</title>
+        <title>GroHair & GloSkin – Best Hair & Skin Care in Krishnagiri</title>
         <meta
           name="description"
-          content="GroHair & GloSkin provides expert hair regrowth and skin treatments in Kanchipuram. Book a consultation for advanced hair and skin care solutions."
+          content="GroHair & GloSkin provides expert hair regrowth and skin treatments in Krishnagiri. Book a consultation for advanced hair and skin care solutions."
         />
 
         {/* Open Graph / Facebook */}
-        <meta property="og:title" content="GroHair & GloSkin – Best Hair & Skin Care in Kanchipuram" />
+        <meta
+          property="og:title"
+          content="GroHair & GloSkin – Best Hair & Skin Care in Krishnagiri"
+        />
         <meta
           property="og:description"
-          content="GroHair & GloSkin provides expert hair regrowth and skin treatments in Kanchipuram. Book a consultation for advanced hair and skin care solutions."
+          content="GroHair & GloSkin provides expert hair regrowth and skin treatments in Krishnagiri. Book a consultation for advanced hair and skin care solutions."
         />
         <meta property="og:image" content="%PUBLIC_URL%/image.jpg" />
-        <meta property="og:url" content="https://adgrohairgloskinkanchipuram.in/" />
+        <meta
+          property="og:url"
+          content="https://adgrohairgloskinKrishnagiri.in/"
+        />
         <meta property="og:type" content="website" />
 
         {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta property="twitter:domain" content="adgrohairgloskinkanchipuram.in" />
-        <meta property="twitter:url" content="https://adgrohairgloskinkanchipuram.in/" />
+        <meta
+          property="twitter:domain"
+          content="adgrohairgloskinKrishnagiri.in"
+        />
+        <meta
+          property="twitter:url"
+          content="https://adgrohairgloskinKrishnagiri.in/"
+        />
         <meta
           name="twitter:title"
-          content="GroHair & GloSkin – Best Hair & Skin Care in Kanchipuram"
+          content="GroHair & GloSkin – Best Hair & Skin Care in Krishnagiri"
         />
         <meta
           name="twitter:description"
-          content="GroHair & GloSkin provides expert hair regrowth and skin treatments in Kanchipuram. Book a consultation for advanced hair and skin care solutions."
+          content="GroHair & GloSkin provides expert hair regrowth and skin treatments in Krishnagiri. Book a consultation for advanced hair and skin care solutions."
         />
         <meta name="twitter:image" content="%PUBLIC_URL%/image.jpg" />
       </Helmet>

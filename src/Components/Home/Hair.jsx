@@ -70,7 +70,7 @@ const SpecialtySlider = () => {
         mt={{ lg: 9, md: 10, sm: 6, xs: 5 }}
         mb={{ xs: 5, sm: 6, md: -5, lg: 1 }}
         ml={{ lg: 5 }}
-         data-aos="flip-up"
+        data-aos="flip-up"
       >
         HAIR{" "}
         <Box component="span" color="#ff0000ff">
@@ -120,8 +120,6 @@ const SpecialtySlider = () => {
               </SwiperSlide>
             ))}
           </Swiper>
-
-       
         </Box>
       ) : (
         // Desktop Layout (unchanged)
@@ -131,7 +129,7 @@ const SpecialtySlider = () => {
             size={{ lg: 6, xs: !2 }}
             order={{ xs: 1, sm: 1, md: 1, lg: 1 }}
             mt={{ lg: 5, xs: -1, sm: 5 }}
-              data-aos="fade-down"
+            data-aos="fade-down"
           >
             <Box
               display="flex"
@@ -142,7 +140,7 @@ const SpecialtySlider = () => {
               mt={1}
             >
               <Typography variant="h6" color="text.secondary" mb={1}>
-                Top Hair Solutions at GloSkin Kanchipuram
+                Top Hair Solutions at GloSkin Krishnagiri
               </Typography>
 
               <Typography
@@ -152,7 +150,7 @@ const SpecialtySlider = () => {
                 fontFamily="Poppins"
                 mb={3}
               >
-                Top Hair Solutions at GroHair Kanchipuram
+                Top Hair Solutions at GroHair Krishnagiri
               </Typography>
 
               <Typography
@@ -253,7 +251,7 @@ const SpecialtySlider = () => {
           <Grid
             size={{ lg: 5, xs: 15, mt: 8 }}
             order={{ xs: 2, sm: 2, md: 2, lg: 0 }}
-              data-aos="fade-up"
+            data-aos="fade-up"
           >
             <Box
               component="img"

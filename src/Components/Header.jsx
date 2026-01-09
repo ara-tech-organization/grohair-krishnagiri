@@ -16,7 +16,7 @@ import {
 } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
 import { Link, useLocation } from "react-router-dom";
-import Logo from "../Components/Images/Logo.jpeg";
+import Logo from "../Components/Images/krishnagiri.jpg";
 
 const navItems = [
   { label: "Home", to: "/" },

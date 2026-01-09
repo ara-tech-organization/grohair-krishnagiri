@@ -75,7 +75,7 @@ const SpecialtySlider = () => {
             mt={1}
           >
             <Typography variant="h6" color="text.secondary" mb={1}>
-              Top Hair Solutions at GloSkin Kanchipuram
+              Top Hair Solutions at GloSkin Krishnagiri
             </Typography>
 
             <Typography
@@ -85,10 +85,10 @@ const SpecialtySlider = () => {
               fontFamily="Poppins"
               mb={3}
             >
-              Top Hair Solutions at GroHair Kanchipuram
+              Top Hair Solutions at GroHair Krishnagiri
             </Typography>
 
-            <Typography variant="h6" color="black" mb={5} ml={{lg:3}}>
+            <Typography variant="h6" color="black" mb={5} ml={{ lg: 3 }}>
               Combat hair thinning, bald spots, and hair fall with proven,
               personalized treatments tailored to your scalp and hair type.
               Experience visible transformation with expert dermatologists.
@@ -130,7 +130,7 @@ const SpecialtySlider = () => {
                   sx={{
                     py: 5,
                     px: 3,
-                    ml: { xs: 7 ,lg:2},
+                    ml: { xs: 7, lg: 2 },
                     width: { xs: "70%", sm: "80%", md: "35%", lg: 250 },
                     flexShrink: 0,
                     scrollSnapAlign: "start",
