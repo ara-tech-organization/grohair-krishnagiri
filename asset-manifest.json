@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/grohair-krishnagiri/static/css/main.055f2e3d.css",
-    "main.js": "/grohair-krishnagiri/static/js/main.02315c28.js",
+    "main.js": "/grohair-krishnagiri/static/js/main.6e91cae7.js",
     "static/media/s1.png": "/grohair-krishnagiri/static/media/s1.b67f4173ea9ca14b5c65.png",
     "static/media/s2.png": "/grohair-krishnagiri/static/media/s2.a4baaaa15da79759b137.png",
     "static/media/Krishnagiri-about.jpg": "/grohair-krishnagiri/static/media/Krishnagiri-about.6fcd3f38db16d93663e4.jpg",
@@ -29,10 +29,10 @@
     "static/media/s5.jpeg": "/grohair-krishnagiri/static/media/s5.a9ef26dbe28b5751fd83.jpeg",
     "index.html": "/grohair-krishnagiri/index.html",
     "main.055f2e3d.css.map": "/grohair-krishnagiri/static/css/main.055f2e3d.css.map",
-    "main.02315c28.js.map": "/grohair-krishnagiri/static/js/main.02315c28.js.map"
+    "main.6e91cae7.js.map": "/grohair-krishnagiri/static/js/main.6e91cae7.js.map"
   },
   "entrypoints": [
     "static/css/main.055f2e3d.css",
-    "static/js/main.02315c28.js"
+    "static/js/main.6e91cae7.js"
   ]
 }
