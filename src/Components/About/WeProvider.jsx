@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
-import AboutImg from "../Images/3.jpg"; // make sure it's a girl image
+import AboutImg from "../Images/Krishnagiri-about.jpg"; // make sure it's a girl image
 import AOS from "aos";
 import "aos/dist/aos.css";
 
@@ -32,18 +32,20 @@ const Section = () => {
         mt: 10,
       }}
     >
-      {/* Left Side - Text */}
       <Box
         data-aos="fade-up"
         sx={{
           flex: 1,
           textAlign: { xs: "center", md: "left" },
-          ml: { sm: -5, lg: 2 },
+          px: { xs: 1, md: 2 },
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
         }}
       >
         <Typography
           sx={{
-            color: "#000000ff",
+            color: "#000",
             fontWeight: "bold",
             mb: 1,
             fontSize: { xs: "1rem", sm: "1.5rem", md: "1.2rem" },
@@ -59,9 +61,8 @@ const Section = () => {
             fontSize: {
               xs: "1.3rem",
               sm: "1.8rem",
-              md: "2.5rem",
+              md: "2.2rem",
               lg: "2rem",
-              xl: "2rem",
             },
             mb: 3,
             lineHeight: 1.4,
@@ -77,7 +78,7 @@ const Section = () => {
               flexDirection: { xs: "column", md: "row" },
               gap: 3,
               justifyContent: { xs: "center", md: "flex-start" },
-              alignItems: "flex-start",
+              alignItems: "stretch",
               flexWrap: "wrap",
             }}
           >
@@ -88,22 +89,20 @@ const Section = () => {
                 backgroundColor: "#f5f5f5",
                 p: 2,
                 borderRadius: 2,
-                maxWidth: { lg: 500, md: 600, sm: 550 },
-                height: { lg: 230, md: 350, xs: 200, sm: 100 },
                 flex: 1,
+                minHeight: { xs: 200, sm: 180, md: 210 },
               }}
             >
               <Typography
                 sx={{
                   color: "#555",
-                  fontSize: { xs: "0.90rem", sm: "1.3rem", md: "1.05rem" },
+                  fontSize: { xs: "0.90rem", sm: "1.2rem", md: "1.05rem" },
                   mt: 1,
                 }}
               >
                 GroHair and GloSkin combine their deep expertise in hair and
                 skin wellness with the serene pace of Krishnagiri. Our clinic
-                blends clinical precision with a luxurious experience, delivered
-                by trained professionals in a safe, sterile setting.
+                blends clinical precision with a luxurious experience.
               </Typography>
             </Box>
 
@@ -114,40 +113,36 @@ const Section = () => {
                 backgroundColor: "#f5f5f5",
                 p: 2,
                 borderRadius: 2,
-                maxWidth: 550,
-                height: { lg: 230, md: 350, xs: 200, sm: 100 },
                 flex: 1,
+                minHeight: { xs: 200, sm: 180, md: 210 },
               }}
             >
               <Typography
                 sx={{
                   color: "#555",
-                  fontSize: { xs: "0.95rem", sm: "1.3rem", md: "1.05rem" },
+                  fontSize: { xs: "0.95rem", sm: "1.2rem", md: "1.05rem" },
                 }}
               >
-                At our Krishnagiri center, you’ll find the best of science,
-                technology, and personalized care. Whether it’s hair thinning,
-                pigmentation issues, premature aging, or any other
-                concern—you’ll find solutions tailored just for you, backed by
-                trusted professionals.
+                At our Krishnagiri center, you’ll find the best of science and
+                personalized treatments—hair thinning, pigmentation, anti-aging
+                & more—performed by trained professionals.
               </Typography>
             </Box>
           </Box>
         </Box>
       </Box>
 
-      {/* Right Side - Image */}
       <Box
         data-aos="fade-up"
         sx={{
           flex: 1,
+          width: "100%",
           position: "relative",
           display: "flex",
-          alignItems: "end",
-          justifyContent: "end",
-          mr: { lg: 10, xs: 2, sm: 15, md: 2 },
-          maxWidth: 500,
-          height: { xs: "300px", sm: "400px", md: "600px" },
+          alignItems: "center",
+          justifyContent: "center",
+          mt: { xs: 4, md: 0 },
+          pr: { md: 4, lg: 6 }, 
         }}
       >
         <Box
@@ -155,12 +150,11 @@ const Section = () => {
           src={AboutImg}
           alt="About Girl"
           sx={{
-            width: "90%",
-            height: "100%",
-            mt: -0.5,
+            width: "100%",
+            height: { xs: "auto", md: "100%" },
+            maxHeight: 600,
             objectFit: "cover",
-            ml: 6,
-            position: "relative",
+            borderRadius: 4,
           }}
         />
       </Box>

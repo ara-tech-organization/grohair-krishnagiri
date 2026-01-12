@@ -3,11 +3,9 @@ import { Box, Grid, Typography, Link as MUILink } from "@mui/material";
 import { Link as RouterLink } from "react-router-dom";
 import PhoneIcon from "@mui/icons-material/Phone";
 import EmailIcon from "@mui/icons-material/Email";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import InstagramIcon from "@mui/icons-material/Instagram";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import logo from "./Images/krishnagiri.jpg";
+import logo from "./Images/krishnagiri-white.png";
 
 const Footer = () => {
   useEffect(() => {
@@ -20,32 +18,25 @@ const Footer = () => {
         container
         spacing={4}
         justifyContent={{ xs: "center", sm: "center", md: "space-between" }}
-        alignItems="center"
+        alignItems="flex-start" // TOP ALIGNMENT FIX
         textAlign={{ xs: "center", sm: "center", md: "left" }}
         px={{ xs: 2, sm: 4, md: 5 }}
         pt={10}
         pb={10}
-        mt={{ xs: 3 }}
       >
-        {/* Logo & Tagline */}
-        <Grid
-          size={{ xs: 12, sm: 10, md: 2, lg: 3 }}
+        {/* LOGO SECTION */}
+        <Grid size={{ xs: 12, sm: 10, md: 4, lg: 4 }}
           data-aos="fade-down"
           display="flex"
           flexDirection="column"
-          mt={2}
-          alignItems={{ xs: "center", sm: "center", md: "flex-start" }}
+          alignItems={{ xs: "center", md: "flex-start" }}
         >
-          <Box textAlign={{ xs: "center", md: "left" }}>
+          <Box>
             <Box
               component="img"
               src={logo}
               alt="GroHair Logo"
-              sx={{
-                width: { xs: 180, sm: 200, md: 220 },
-                display: "block",
-                mb: 1,
-              }}
+              sx={{ width: { xs: 180, sm: 200, md: 220 }, mb: 2 }}
             />
 
             <Typography fontSize={{ xs: 12, md: 16 }} lineHeight={1.4}>
@@ -57,18 +48,15 @@ const Footer = () => {
           </Box>
         </Grid>
 
-        {/* Contact Info */}
-        <Grid
-          size={{ xs: 12, sm: 10, md: 3 }}
-          ml={{ lg: 0, md: 11 }}
+       
+        <Grid size={{ xs: 12, sm: 10, md: 3, lg: 3 }}
+         
           data-aos="fade-up"
           display="flex"
           flexDirection="column"
-          alignItems={{ xs: "center", sm: "center", md: "flex-start" }}
-          justifyContent="flex-start"
-          mt={{ lg: -12, sm: 0, md: -22 }}
+          alignItems={{ xs: "center", md: "flex-start" }}
         >
-          <Typography variant="h6" fontWeight="bold">
+          <Typography variant="h6" fontWeight="bold" mb={1}>
             Contact
           </Typography>
 
@@ -88,44 +76,14 @@ const Footer = () => {
               Krishnagiri@adgrohair.com
             </Typography>
           </Box>
-
-          {/* <Box display="flex" alignItems="center" mt={1.5}>
-            <InstagramIcon sx={{ color: "#fff", mr: 1 }} />
-            <Typography
-              fontSize={{ xs: 15, md: 17 }}
-              component="a"
-              href="https://www.instagram.com/adgrohairandgloskinKrishnagiri/?hl=en/"
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{ textDecoration: "none", color: "inherit" }}
-            >
-              Instagram
-            </Typography>
-          </Box>
-
-          <Box display="flex" alignItems="center" mt={1.5}>
-            <FacebookIcon sx={{ color: "#fff", mr: 1 }} />
-            <Typography
-              fontSize={{ xs: 15, md: 17 }}
-              component="a"
-              href="https://www.facebook.com/adgrohairandgloskinKrishnagiri/videos/?_rdr"
-              target="_blank"
-              rel="noopener noreferrer"
-              sx={{ textDecoration: "none", color: "inherit" }}
-            >
-              Facebook
-            </Typography>
-          </Box> */}
         </Grid>
 
-        {/* Quick Links */}
-        <Grid
-          size={{ xs: 12, sm: 10, md: 1, lg: 1 }}
+        {/* QUICK LINKS SECTION */}
+        <Grid size={{ xs: 12, sm: 10, md: 2, lg: 2 }}
           data-aos="zoom-in"
           display="flex"
           flexDirection="column"
-          alignItems={{ xs: "center", sm: "center", md: "flex-start" }}
-          mt={{ lg: -16, sm: 0, md: -22 }}
+          alignItems={{ xs: "center", md: "flex-start" }}
         >
           <Typography variant="h6" fontWeight="bold" mb={2}>
             Links
@@ -133,10 +91,9 @@ const Footer = () => {
 
           <Box
             display="grid"
-            gridTemplateColumns={{ xs: "2fr 1fr", sm: "1fr 1fr", md: "1fr" }}
+            gridTemplateColumns={{ xs: "1fr 1fr", sm: "1fr 1fr", md: "1fr" }}
             gap={1}
-            ml={{ xs: -3, sm: 1 }}
-            textAlign={{ xs: "center", sm: "center", md: "left" }}
+            textAlign={{ xs: "center", md: "left" }}
           >
             {[
               { label: "Home", path: "/" },
@@ -152,7 +109,7 @@ const Footer = () => {
                 color="inherit"
                 fontSize={{ xs: 15, md: 16 }}
                 sx={{
-                  transition: "all 0.3s ease",
+                  transition: "0.3s",
                   "&:hover": {
                     fontWeight: "bold",
                     textDecoration: "underline",
@@ -166,44 +123,46 @@ const Footer = () => {
           </Box>
         </Grid>
 
-        {/* Location Map */}
+        {/* LOCATION MAP */}
         <Grid
-          size={{ xs: 12, sm: 10, md: 3 }}
+          size={{ xs: 12, sm: 10, md: 3, lg: 3 }}
           data-aos="fade-down"
           display="flex"
           flexDirection="column"
-          alignItems={{ xs: "center", sm: "center", md: "flex-start" }}
-          mt={{ lg: -8, md: -15 }}
+          alignItems={{ xs: "center", md: "flex-start" }}
         >
           <Typography variant="h6" fontWeight="bold" mb={2}>
-            Locations
+            Location
           </Typography>
 
           <Box
             sx={{
+              position: "relative",
+              width: "100%",
+              paddingTop: "56.25%",
               border: "1px solid #ddd",
               borderRadius: 2,
               overflow: "hidden",
-              width: { lg: "100%", md: "100%" },
-              height: { xs: 200, sm: 200, md: 180 },
-              ml: { sm: 2, lg: -1, md: 0 },
-              mr: { md: 0, lg: 0 },
             }}
           >
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3524.575909125458!2d78.20365867506898!3d12.530519087745834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bac3525b6acbe23%3A0xbda7fc6a80057595!2sAdvanced%20GroHair%20%26%20GloSkin%20-%20Krishnagiri!5e1!3m2!1sen!2sin!4v1767941690802!5m2!1sen!2sin"
-              width="600"
-              height="450"
-             
-              allowfullscreen=""
+              style={{
+                border: 0,
+                position: "absolute",
+                top: 0,
+                left: 0,
+                width: "100%",
+                height: "100%",
+              }}
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              allowFullScreen=""
             ></iframe>
           </Box>
         </Grid>
       </Grid>
 
-      {/* Bottom Bar */}
+      {/* BOTTOM BAR */}
       <Box
         sx={{
           py: 2,
